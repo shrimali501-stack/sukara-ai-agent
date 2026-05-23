@@ -193,10 +193,12 @@ tools_map = {t.name: t for t in tools}
  
 # ── Groq LLaMA Agent ──────────────────────────────────────────────────────────
  
+from pydantic import SecretStr
+
 llm = ChatGroq(
     model="llama3-70b-8192",
     temperature=0,
-    api_key=os.getenv("GROQ_API_KEY")
+    api_key=SecretStr(os.getenv("GROQ_API_KEY"))
 )
 llm_with_tools = llm.bind_tools(tools)
  
