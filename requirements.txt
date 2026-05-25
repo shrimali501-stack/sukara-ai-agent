@@ -1,0 +1,14 @@
+langchain
+langchain-openai
+langchain-community
+langchain-tavily
+tavily-python
+google-auth
+google-auth-oauthlib
+google-api-python-client
+openai
+python-dotenv
+pandas
+pydantic
+groq
+langchain-groq
